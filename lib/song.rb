@@ -31,7 +31,7 @@ class Song
     song_data = file.split(" - ")
     name = song_data[1]
     artist = song_data[0]
-    genre = song_data [2].delete(".mp3")
+    genre = song_data[2].chomp(".mp3")
     
     song = Song.new(name)
     song.artist = Artist.find_or_create_by_name(artist)
