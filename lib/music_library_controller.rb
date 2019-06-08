@@ -63,10 +63,14 @@ class MusicLibraryController
       puts "#{i}. #{song.name} - #{song.genre.name}"
       end 
     end
-    
+  end 
+   
   def list_songs_by_genre
-    puts 
+    puts "Please enter the name of a genre:"
+    input_genre = gets.chomp
+    if g = Genre.find_by_name(input_genre)
+      
   end 
-  end 
+  
   
 end 
