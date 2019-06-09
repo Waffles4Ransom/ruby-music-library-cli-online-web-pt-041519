@@ -82,7 +82,7 @@ class MusicLibraryController
     return if song_input < 1 || song_input > list.size 
     s_request = list.include?(song_input) 
       puts "Playing #{s_request.name} by #{s_request.artist.name}"
-    end 
+   
   end 
   
   
