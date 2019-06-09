@@ -81,8 +81,10 @@ class MusicLibraryController
     list =  Song.all.sort_by{|s| s.name}
     if song_input < 1 || song_input > list.size 
       return 
-    elsif list.include?(song_input) 
-     puts "Playing #{song.name} by #{song.artist.name}"
+    else
+      if list.include?(song_input) 
+        puts "Playing #{song.name} by #{song.artist.name}"
+      end 
     end 
   end 
   
