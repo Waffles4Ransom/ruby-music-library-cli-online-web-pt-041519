@@ -80,7 +80,7 @@ class MusicLibraryController
     list = Song.all.sort_by{|song| song.name}
     song_input = gets.strip.to_i
     # return if song_input < 1 || song_input > list.size 
-    if (1..list.size)include?(song_input)
+    if (1..list.size).include?(song_input)
     song_request = list[song_input - 1]
 
     # if song_request
