@@ -81,6 +81,7 @@ class MusicLibraryController
     # list =  Song.all.sort_by{|s| s.name}
     return if song_input < 1 || song_input > Song.all.size 
     song_request = Song.all.sort_by{|s| s.name}[song_input]
+    binding.pry
     if song_request
       puts "Playing #{song.name} by #{song.artist.name}"
     end
