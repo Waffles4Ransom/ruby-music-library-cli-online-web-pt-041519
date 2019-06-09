@@ -82,7 +82,7 @@ class MusicLibraryController
     binding.pry
     return if song_input < 1 || song_input > list.size 
     song_request = list[song_input - 1]
-    
+    binding.pry
     if song_request
       puts "Playing #{song_request.name} by #{song_request.artist.name}"
     end
