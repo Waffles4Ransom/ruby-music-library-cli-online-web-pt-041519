@@ -81,6 +81,7 @@ class MusicLibraryController
     song_input = gets.strip.to_i
     if (1..list.size).include?(song_input)
     song_request = list[song_input - 1]
+    binding.pry
       puts "Playing #{song_request.name} by #{song_request.artist.name}"
     end
   end 
