@@ -83,7 +83,7 @@ class MusicLibraryController
     song_request = Song.all.sort_by{|s| s.name}[song_input - 1]
     #binding.pry
     if song_request
-      puts "Playing #{song.name} by #{song.artist.name}"
+      puts "Playing #{song_request.name} by #{song_request.artist.name}"
     end
   end 
   
