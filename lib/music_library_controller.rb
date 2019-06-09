@@ -79,8 +79,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     list = Song.all.sort_by{|song| song.name}
     song_input = gets.strip.to_i
-    
-    return if song_input < 1 || song_input > list.size 
+    # return if song_input < 1 || song_input > list.size 
     song_request = list[song_input - 1]
 
     if song_request
